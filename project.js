@@ -22,11 +22,11 @@ function addCar(e){
     const price = priceElement.value;
     const url = imageElement.value;
     if(title === '' || price === '' || url === ''){
-        //ui.showAlert('Please fill in all fields','error');
+        ui.showAlert('Please fill in all fields','danger');
     }else{
         const car = new Car(title,price,url);
         ui.addCar(car);
-        //ui.showAlert('Car Added','success');
+        ui.showAlert('Car Added','success');
     }
     ui.clearInputs(titleElement,priceElement,imageElement);
     e.preventDefault();
