@@ -1,7 +1,8 @@
 //Car Constructor
-
-function Car(title,price,url){
-    this.title = title;
-    this.price = price;
-    this.url = url;
+class Car {
+    constructor(title, price, url) {
+        this.title = title;
+        this.price = price;
+        this.url = url;
+    }
 }
